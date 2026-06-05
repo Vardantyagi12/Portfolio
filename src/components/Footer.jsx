@@ -3,41 +3,41 @@ import { Link } from 'react-router-dom'
 
 function About() {
     return (
-        <footer className="bg-white border-y my-10">
+        <footer className="bg-white dark:bg-gray-950 border-y border-gray-200 dark:border-gray-800 my-10">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
                                 src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                                className="mr-3 h-16"
+                                className="mr-3 h-16 dark:invert dark:opacity-90"
                                 alt="Logo"
                             />
                         </Link>
                     </div>
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white uppercase">Resources</h2>
+                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <Link to="" className={({ isActive }) => `${isActive ? "text-orange-700" : "text-gray-700"}hover:underline`}>
+                                    <Link to="" className={({ isActive }) => `${isActive ? "text-orange-700" : "text-gray-700 dark:text-gray-300"} hover:underline`}>
                                         Home
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/About" className="hover:underline">
+                                    <Link to="/About" className="hover:underline hover:text-gray-900 dark:hover:text-white">
                                         About
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white uppercase">Follow us</h2>
+                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a
                                         href="https://github.com/hiteshchoudhary"
-                                        className="hover:underline"
+                                        className="hover:underline hover:text-gray-900 dark:hover:text-white"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -45,22 +45,22 @@ function About() {
                                     </a>
                                 </li>
                                 <li>
-                                    <Link to="/" className="hover:underline">
+                                    <Link to="/" className="hover:underline hover:text-gray-900 dark:hover:text-white">
                                         Discord
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-white uppercase">Legal</h2>
+                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <Link to="#" className="hover:underline">
+                                    <Link to="#" className="hover:underline hover:text-gray-900 dark:hover:text-white">
                                         Privacy Policy
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className="hover:underline">
+                                    <Link to="#" className="hover:underline hover:text-gray-900 dark:hover:text-white">
                                         Terms &amp; Conditions
                                     </Link>
                                 </li>
@@ -68,17 +68,17 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+                <hr className="my-6 border-gray-200 dark:border-gray-800 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center">
+                    <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
                         © 2025
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
+                        <a href="https://hiteshchoudhary.com/" className="hover:underline hover:text-gray-900 dark:hover:text-white">
                             Vardan Tyagi
                         </a>
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-500 hover:text-gray-900">
+                        <Link to="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -94,7 +94,7 @@ function About() {
                             </svg>
                             <span className="sr-only">Facebook page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -106,7 +106,7 @@ function About() {
                             </svg>
                             <span className="sr-only">Discord community</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -122,7 +122,7 @@ function About() {
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -138,7 +138,7 @@ function About() {
                             </svg>
                             <span className="sr-only">GitHub account</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

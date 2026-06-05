@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import App from './App.jsx'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from 'react-dom/client'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
@@ -10,35 +10,33 @@ import User from './components/User.jsx'
 
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
     children: [
       {
-        path: "",
+        index: true,
         element: <Home />
       },
       {
-        path: "/About",
+        path: "about",
         element: <About />
       },
       {
-        path: "Contact",
+        path: "contact",
         element: <Contact />
       },
       {
-        path: "User/:userid",
+        path: "user/:userid",
         element: <User />
-      },
+      }
     ]
   }
-])
+]);
 
 createRoot(document.getElementById('root')).render(
-
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
-
 )

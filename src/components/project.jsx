@@ -9,7 +9,7 @@ function ProjectCard({
   githubLink = "",
 }) {
   return (
-    <div className="w-400 rounded-2xl shadow-2xl cursor-pointer ">
+    <div className="w-400 rounded-2xl shadow-2xl cursor-pointer bg-white dark:bg-gray-900 border border-slate-100 dark:border-gray-800">
       <div className="rounded-2xl">
         <img
           src={picture}
@@ -19,7 +19,7 @@ function ProjectCard({
       </div>
       <div className="rounded-2xl p-5">
         <h3 className="text-4xl font-bold">{projectName}</h3>
-        <p className="mt-3 text-gray-500 text-2xl">{detail}</p>
+        <p className="mt-3 text-gray-500 dark:text-gray-400 text-2xl">{detail}</p>
         <div className="flex flex-wrap gap-4 mt-6">
           <Link
             to={liveDemoLink}
